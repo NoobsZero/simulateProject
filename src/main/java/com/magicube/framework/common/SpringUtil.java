@@ -13,10 +13,22 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class SpringUtil {
 
     private static final Log log = LogFactory.getLog(SpringUtil.class);
-    
+
     private static final ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
 
     public static Object getBean(String beanName) {
+        log.info("get object from spring,beanName：" + beanName);
+        return ctx.getBean(beanName);
+    }
+
+    /**
+     * 根据ApplicationContext得到JavaBean
+     *
+     * @param beanName
+     * @param ctx
+     * @return
+     */
+    public static Object getBean(String beanName, ApplicationContext ctx) {
         log.info("get object from spring,beanName：" + beanName);
         return ctx.getBean(beanName);
     }
