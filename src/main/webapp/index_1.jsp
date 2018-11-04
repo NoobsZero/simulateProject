@@ -11,7 +11,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>taskplatform111111111</title>
+        <title>taskplatform11111111111111</title>
     </head>
     <body>
         <c:redirect url="/sso/login" />
